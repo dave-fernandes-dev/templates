@@ -1,0 +1,33 @@
+<app-bread-crumb
+  [items]="[{text: 'Countries'}]"
+></app-bread-crumb>
+
+<app-page-header
+  page-title="Countries"
+  button-text="+ Novo Country"
+  button-link="new"
+  button-class="btn-success"
+></app-page-header>
+
+
+<table class="table table-hover">
+  <thead>
+    <p>execute " $ npx npm run json" na raiz do projeto para levantar a api-backend:</p>
+    <tr class="bg-primary text-light">
+      <th>Country</th>
+      <th>Ações</th>
+    </tr>
+    <!--pre>Data Obtained1 is: {{ resources | json }}</pre-->
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of resources">
+      <td>
+        <strong> {{country.id}} - {{country.name}} - {{country.code}}</strong><br>
+      </td>
+      <td>
+        <a [routerLink]="[country.id, 'edit']" class="btn btn-outline-info btn-sm mr-2">Editar</a>
+        <button (click)="deleteResource(country)" class="btn btn-outline-danger btn-sm">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
