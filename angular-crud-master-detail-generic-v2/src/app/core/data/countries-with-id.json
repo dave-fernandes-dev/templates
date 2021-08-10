@@ -1,9 +1,35 @@
 {
   "countries": [
+  
     {
       "id": 1,
       "name": "Afghanistan",
       "code": "AF"
+    },
+    {
+      "id": 2,
+      "name": "Albania",
+      "code": "AL"
+    },
+    {
+      "id": 3,
+      "name": "Algeria",
+      "code": "DZ"
+    },
+    {
+      "id": 4,
+      "name": "American Samoa",
+      "code": "AS"
+    },
+    {
+      "id": 5,
+      "name": "Andorra",
+      "code": "AD"
+    },
+    {
+      "id": 6,
+      "name": "Angola",
+      "code": "AO"
     },
     {
       "id": 7,
@@ -11,8 +37,13 @@
       "code": "AI"
     },
     {
+      "id": 8,
+      "name": "Antarctica",
+      "code": "AQ"
+    },
+    {
       "id": 9,
-      "name": "kk",
+      "name": "Antigua and Barbuda",
       "code": "AG"
     },
     {
@@ -54,6 +85,21 @@
       "id": 17,
       "name": "Bahrain",
       "code": "BH"
+    },
+    {
+      "id": 18,
+      "name": "Bangladesh",
+      "code": "BD"
+    },
+    {
+      "id": 19,
+      "name": "Barbados",
+      "code": "BB"
+    },
+    {
+      "id": 20,
+      "name": "Belarus",
+      "code": "BY"
     },
     {
       "id": 21,
@@ -154,16 +200,6 @@
       "id": 40,
       "name": "Cayman Islands",
       "code": "KY"
-    },
-    {
-      "id": 41,
-      "name": "teste3",
-      "code": "t3"
-    },
-    {
-      "id": 42,
-      "name": "ioiuoi",
-      "code": "oiuoiu"
     }
   ]
 }
