@@ -5,6 +5,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
 
+import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
+import { TieredMenuModule } from 'primeng/tieredmenu';
+
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
@@ -13,10 +17,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    ButtonModule, SidebarModule, TieredMenuModule
   ],
   declarations: [
-    NavbarComponent
+    NavbarComponent,
   ],
   exports:[
     // shared modules

@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {ToastModule} from 'primeng/toast';
-import {ButtonModule} from 'primeng/button';
 import {ConfirmationService, MessageService} from 'primeng/api';
 
 @NgModule({
@@ -14,7 +13,7 @@ import {ConfirmationService, MessageService} from 'primeng/api';
 
   imports: [
     CoreModule,
-    ToastModule, ButtonModule, 
+    ToastModule, 
     AppRoutingModule
   ],
 
@@ -24,7 +23,6 @@ import {ConfirmationService, MessageService} from 'primeng/api';
 
   exports: [
     ToastModule,
-    ButtonModule
   ]
 })
 export class AppModule { }

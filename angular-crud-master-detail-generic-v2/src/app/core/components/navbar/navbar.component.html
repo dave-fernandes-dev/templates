@@ -1,4 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  
+  <!--p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></p-button-->
+
+  <button #btn type="button" pButton icon="pi pi-bars" label="Menu" (click)="menu.toggle($event)"></button>
+  <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
   <a class="navbar-brand" routerLink="/">Título App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,3 +17,11 @@
     </ul>
   </div>
 </nav>
+
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+  <h1 style="font-weight:normal">Left Sidebar</h1>
+
+  <p-tieredMenu [model]="items"></p-tieredMenu>
+  <p-button type="button" (click)="visibleSidebar1 = false" label="Save" styleClass="p-button-success"></p-button>
+  <p-button type="button" (click)="visibleSidebar1 = false" label="Cancel" styleClass="p-button-secondary"></p-button>
+</p-sidebar>

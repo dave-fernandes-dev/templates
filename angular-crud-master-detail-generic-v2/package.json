@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "json": "json-server --watch src/app/core/data/countries-with-id.json --port 3001",
+    "json": "json-server --watch src/assets/data/countries-with-id.json --port 3001",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -37,6 +37,7 @@
     "@angular-devkit/build-angular": "~0.1102.13",
     "@angular/cli": "~11.2.14",
     "@angular/compiler-cli": "~11.2.14",
+    "@schematics/angular": "^12.2.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "@types/toastr": "^2.1.39",
