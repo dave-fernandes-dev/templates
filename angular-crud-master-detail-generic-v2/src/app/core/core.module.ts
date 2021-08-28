@@ -8,7 +8,8 @@ import { RouterModule } from "@angular/router";
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
-
+import { MegaMenuModule } from 'primeng/megamenu';
+import { PanelMenuModule } from 'primeng/panelmenu';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
@@ -18,7 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule,
-    ButtonModule, SidebarModule, TieredMenuModule
+    ButtonModule, SidebarModule, TieredMenuModule, PanelMenuModule, MegaMenuModule
   ],
   declarations: [
     NavbarComponent,
